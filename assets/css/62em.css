@@ -1,0 +1,135 @@
+@media (max-width: 62em){
+
+  body{
+    flex-direction: column;
+  }
+
+  body#home-page main{
+    order: 2;
+  }
+
+  #site-header, main, main.projects-list-main, main.project-main{
+      max-width: 100%;
+      width:100%;
+      margin: 0 0 2rem 0;
+      order: 0;
+  }
+
+  main, main.projects-list-main, main.project-main{
+    padding:0;
+  }
+
+  main.project-main{
+      height:auto;
+      margin-left:0;
+      max-width: 100%;
+  }
+
+  main article, main section, main section:first-of-type,
+  main.project-main article, main.project-main section, main.project-main section:first-of-type{
+    margin-left:0;
+  }
+
+  #site-header{
+
+  }
+
+  #site-nav ul, #site-nav ul ul{
+      display:flex;
+      flex-wrap: wrap;
+      padding:0;
+  }
+
+  #site-nav ul li, #site-nav ul ul li{
+      margin: 1.5em 1.5em 0.4em 0;
+  }
+
+  #site-nav ul ul li{
+    background-color:#dfdfdf;
+  }
+
+  #site-nav li.parent > a::after{
+      content: "↓ ";
+  }
+
+  /* ARTICLES */
+  article iframe{
+    max-width: 100%;
+  }
+
+  /* PROJECTS LIST */
+  ul.projects-list li{
+      width:70vw;
+      height:70vw;
+      margin:11vw 0;
+  }
+
+
+  ul.projects-list li .project-title{
+    font-size:1.2rem !important;
+  }
+
+  ul.projects-list li p{
+    font-size:1.6rem;
+  }
+
+/* PROJECTS */
+
+ul.gallery li, ul.videos li{
+  margin:1em 0 0 0;
+  padding:0;
+}
+ul.gallery .thumb{
+  width:65vw;
+  height:auto;
+}
+
+  /* LOGS */
+  #logs-page section, #logs-page section:first-of-type{
+    height: auto;
+  }
+
+  #logs-page td{
+    display:block;
+    width:70vw;
+  }
+
+
+  /* CONCORDANCE */
+  ul.concordance{
+    list-style-type: none;
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  ul.concordance > li{
+    margin-bottom: 3em;
+  }
+
+  ul.concordance > li ul li{
+    margin-top:1.5em;
+  }
+
+
+/* PERFUNDO customisation */
+.perfundo__control{
+  font-size: 3em;
+}
+
+.perfundo__prev{
+  left:0.5em;
+  bottom:0.5em;
+  top:auto;
+  opacity: .7;
+}
+
+.perfundo__next{
+  right:0.5em;
+  bottom:0.5em;
+  top:auto;
+  opacity: .7;
+}
+
+
+
+}

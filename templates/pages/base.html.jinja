@@ -1,0 +1,90 @@
+{% set page = pages[url] %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+
+    <title>{% block title %}{{page.meta.title}} • {{siteinfo.name}}{% endblock %}</title>
+    {% if page.meta.keywords %}
+    <meta name="keywords" content="{{ page.meta.keywords|join(',') }}">
+    {% endif %}
+    {% if page.meta.teaser %}
+    <meta name="description" content="{{page.meta.teaser}}">
+    {% endif %}
+    <meta name="generator" content="Zou!">
+    <link href="/assets/css/perfundo.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    {% block head %}
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁</text></svg>">
+    {% endblock %}
+</head>
+
+<body style="background-image: url('folder.jpg');" id="{{page.id|default('home',true)}}-page">
+  <div id="upper">
+    <main class="{{page.meta.model}}-main">
+      <article>
+          <header>
+          {% block main_header %}
+              <h2>{% block main_title %}{{page.meta.title}}{% endblock %}</h2>
+          {% endblock %}
+          </header>
+
+          {% block main_content %}{{page.text}}{% endblock %}
+        </article>
+
+        {% if page.components %}
+        {% for folder, component in page.components.items() %}
+            <section class="component-{{component.meta.model}}" id="{{component.meta.model}}-{{folder}}">
+                {% include component.meta.model + '.html.jinja' %}
+            </section>
+        {% endfor %}
+        {% endif %}
+    </main>
+
+    <header id="site-header">
+      {% block site_header %}
+        <h1><a href="/">{{siteinfo.name}}</a></h1>
+        <nav id="site-nav">
+            <ul>
+            {% if pages['/']['subpages'] %}
+              {% for path in pages['/']['subpages'] %}
+                {% if pages[path].meta.visibility != 0 %}
+                  {% set isActive = true if url == path else false %}
+                  {% set isParent = true if url|parent == path else false %}
+                    <li id="menu-{{ pages[path].id }}" class="{{'active' if isActive}} {{'parent' if isParent}}">
+                        <a href="{{path}}">{{pages[path].meta.title}}</a>
+                        {# if isParent and pages[path]['subpages'] #}
+                          <ul>
+                          {% for subpath in pages[path]['subpages'] %}
+                            {% if pages[subpath].meta.visibility != 0 %}
+                            <li id="menu-{{ pages[subpath].id }}" class="{{'active' if url == subpath}}">
+                              <a href="{{subpath}}">{{pages[subpath].meta.title}}</a>
+                            </li>
+                            {% endif %}
+                          {% endfor %}
+                          </ul>
+                        {# endif #}
+                    </li>
+                {% endif%}
+              {% endfor %}
+            {% endif%}
+            </ul>
+        </nav>
+        {% endblock %}
+    </header>
+  </div>
+
+    <footer id="colophon">
+      <div id="colophon-txt">
+      {{siteinfo.copyright}}<br>
+      Ceci est un document vivant, qui sera régulièrement mis-à-jour ({{lastupdate}})
+      {{siteinfo.colophon}}
+    </div>
+    <div id="colophon-logos">
+      <!-- logo stluc ici -->
+    </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{% if component.assets %}
+    <h2>{{component.meta.title}}</h2>
+    <ul class="videos">
+    {% for asset in component.assets %}
+    {% if asset|last == "4" %}
+    <li class="video">
+      <video controls src="{{folder}}/{{asset}}" poster="{{folder}}/{{asset}}.jpg" type="video/mp4" preload="metadata">
+          Your browser doesn't seem to support this video. You can still download the file here: <a href="{{folder}}/{{asset}}" target="_blank">{{asset}}</a>
+      </video>
+    </li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+    {% if component.meta.text %}
+      <aside>{{component.meta.text}}</aside>
+    {% endif %}
+{% endif %}

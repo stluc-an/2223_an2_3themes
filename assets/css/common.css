@@ -1,0 +1,543 @@
+
+
+:root {
+  --zoubg: #fffdf7;
+  --zoumargin: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html{
+  background-color: #fffdf7;
+  font-family: "iosevka-aile", monospace;
+}
+
+/* LAYOUT
+  BODY
+ +------------------------------+
+ | +--------------------------+ |
+ | |#UPPER                    | |
+ | | +------+---------------+ | |
+ | | |HEADR | MAIN           | | |
+ | | |      |               | | |
+ | | |      |               | | |
+ | | |      |               | | |
+ | | |      |               | | |
+ | | |      |               | | |
+ | | |      |               | | |
+ | | |      |               | | |
+ | | +------+---------------+ | |
+ | |                          | |
+ | +--------------------------+ |
+ | |FOOTER                    | |
+ | |                          | |
+ | |                          | |
+ | +--------------------------+ |
+ +------------------------------+
+*/
+
+body{
+  width:100%;
+  min-height:100vh;
+  background-size: cover;
+  padding:var(--zoumargin);
+  display:flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#upper{
+  flex: 1;
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#site-header{
+    width:20%;
+    background-color:#efefef;
+    padding:3%;
+    order:1;
+}
+
+main{
+    height:auto;
+    margin-bottom:5em;
+    order:2;
+
+    display:flex;
+    flex-wrap: wrap;
+    width:80%;
+}
+
+article, section{
+  background-color: #efefef;
+  padding: 1.2em 1.4em;
+  margin:0 0 var(--zoumargin) var(--zoumargin);
+}
+
+article, section:first-of-type{
+  width:calc(50% - var(--zoumargin));
+}
+
+article img, section img{
+    max-width: 100%;
+}
+
+#colophon{
+    width:100vw;
+    order:3;
+    background-color:#222;
+    color:#efefef;
+    margin:0 -2rem -2rem -2rem;
+    padding: 1.4em 2rem;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+#colophon-logos{
+
+}
+
+#colophon-logos img{
+  max-width: 3em;
+  max-height: 3em;
+}
+
+/* GENERAL STYLE */
+
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+
+a:link, a:visited{
+  color:#000;
+}
+
+a:hover{
+  color: blue;
+}
+
+h1 a, h1 a:visited{
+  text-decoration: none;
+  color:#000;
+}
+
+footer a:link, footer a:visited{
+  color:#efefef;
+}
+
+/* TYPOGRAPHY */
+html{
+  font-family: "iosevka-aile", monospace;
+}
+
+h1,h2,h3,h4, #site-header, .meta{
+  font-family: "iosevka", monospace;
+}
+
+article ul, section ul{
+  list-style-type: ". ";
+
+}
+
+article li, section li{
+  margin: 0 0 1em 0.75em;
+}
+
+/* SITE HEADER */
+#site-header #tidy{
+    font-size:inherit;
+    margin:1em 0 0 0;
+    padding:0.3em 0.3em;
+}
+
+/* NAVIGATION */
+
+#site-nav{
+  font-size: 1.2em;
+}
+
+#site-nav ul{
+    padding:0;
+    text-transform: lowercase;
+}
+
+#site-nav ul ul{
+    padding-left:0.5em;
+}
+
+#site-nav li{
+    list-style-type: none;
+    xmargin-top:0.3em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: "~";
+}
+
+#site-nav a{
+  text-decoration: none;
+  color:#000;
+}
+
+#site-nav li.active{
+    xlist-style-type: "→ ";
+}
+
+#site-nav li.parent{
+    xlist-style-type: "↓ ";
+}
+
+#site-nav a:hover{
+  background-color:#dfdfdf;
+}
+
+#site-nav .active > a{
+    background-color: aquamarine;
+}
+
+
+
+/* MAIN CONTENT */
+
+article header, section h2{
+  margin-bottom: 2rem;
+}
+
+/* PROJECTS */
+main.project-main article, main.project-main section:first-of-type{
+  width:calc(50% - 1rem);
+}
+main.project-main section:first-of-type{
+    margin-left:0;
+}
+
+main.project-main section:first-of-type h2{
+  display: none;
+}
+
+article header ul.meta{
+  margin:0;padding:0;
+  list-style-type: "> ";
+  list-style-position: inside;
+}
+
+article header ul.meta li{
+  margin:0;
+}
+
+article header .keywords{
+  display:flex;
+}
+
+article header ul.meta .keywords ul{
+  margin:0;padding:0;
+  display:flex;
+  flex-wrap: wrap;
+  list-style-type: "# ";
+  list-style-position: inside;
+}
+
+article header ul.meta  .keywords li{
+  margin:0 2em 0 0;
+}
+
+article header ul.meta  .keywords li a{
+  text-decoration: none;
+  color:#000;
+}
+
+article header ul.meta  .keywords li:hover{
+  background-color: #dfdfdf;
+}
+
+/* PROJECTS LIST */
+main.projects-list-main article{
+    background-color: transparent;
+    width:100%;
+}
+
+main.projects-list-main{
+    width:80%;
+}
+
+ul.projects-list{
+    list-style-type: none;
+    padding:0;
+    display:flex;
+    flex-wrap: wrap;
+    image-rendering: crisp-edges;
+}
+
+ul.projects-list li{
+    width:17vw;
+    height:17vw;
+    color:#333;
+    margin:2vw;
+    position:relative;
+    background-size: cover;
+  transition-property: transform;
+  transition-duration: 0.1s;
+    transition-timing-function: easeOutQuint;
+}
+
+ul.projects-list li a{
+    width:100%;
+    height:100%;
+    text-decoration: none;
+}
+
+
+ul.projects-list li:hover, ul.projects-list li:focus{
+    z-index:999;
+    transform: scale(1.1);
+}
+
+ul.projects-list li .project-title{
+    width:100%;
+    height:100%;
+    overflow-y:hidden;
+    position:absolute;
+    xfont-size:1.4vw;
+    font-family: "iosevka", monospace;
+    text-transform: lowercase;
+    overflow-wrap: break-word;
+    font-weight:500;
+    z-index:1;
+}
+
+ul.projects-list li .project-title h3{
+    display:inline;
+    font-size: inherit;
+    font-weight:inherit;
+}
+
+ul.projects-list li a .project-title h3 {
+    color:#000;
+}
+
+ul.projects-list li .project-title span span:nth-child(even){
+    color:#000;
+}
+
+ul.projects-list li .project-title span span:nth-child(odd){
+    color:#fff;
+}
+
+ul.projects-list li p{
+    width:100%;
+    font-size:1.8vw;
+    position:absolute;
+    z-index:2;
+}
+
+ul.projects-list li p span{
+    color:#FFF;
+    background-color: #000;
+}
+
+ul.projects-list a{
+    text-decoration: none;
+}
+
+ul.projects-list li:nth-child(1) h2{
+  display: none;
+}
+
+/* LOGS */
+#logs-page article{
+  width:100%;
+}
+
+#logs-page section, #logs-page section:first-of-type{
+  width: calc(50% - 2rem);
+  height: 33vh;
+  overflow-y: scroll;
+}
+
+#logs-page section h2{
+  font-size:1em;
+  font-family: "iosevka-aile", monospace;
+  margin-bottom:2em;
+}
+
+#logs-page section table, #logs-page section tbody{
+  width:100%;
+  vertical-align: top;
+  border:none;
+}
+
+#logs-page section thead th:nth-child(1) {
+  width: 21%;
+}
+
+#logs-page section td{
+  padding-bottom:1em;
+}
+
+
+
+/* ARTICLES */
+article p{
+  margin-bottom: 1em;
+}
+
+article p img{
+  position: absolute;
+  width: 15vw;
+  left: 60vw;
+  z-index:10;
+  transition: width 0.5s;
+}
+
+article p img:hover{
+  width: 30vw;
+  z-index:50;
+}
+
+article blockquote{
+  margin:1em 0% 1em 0em;
+  padding:0 0.5em;
+  font-style: italic;
+  border-left: 1px solid black;
+}
+
+article *::selection{
+  background-color: aquamarine;
+}
+
+/* VIDEOS */
+ul.videos{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-content: space-between;
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+
+ul.videos li{
+  width:100%;
+  padding:0 0 1vw 0;
+  margin:0;
+}
+
+ul.videos video{
+  width: 100%;
+}
+
+/* GALLERY */
+ul.gallery{
+  padding:0;
+  list-style-type: none;
+}
+
+ul.gallery li{
+  xmargin-bottom:1em;
+  padding:0 1vw 1vw 0;
+  display:inline-block;
+  margin:0;
+}
+
+ul.gallery .thumb{
+  height:10vw;
+}
+
+/* PERFUNDO customisation */
+.perfundo__image{
+  width:  85vw;
+  height: 85vh;
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.perfundo__control{
+  font-size:3vw;
+  text-decoration:none;
+}
+
+.perfundo__close{
+  top:0;
+  right:0.5em;
+}
+
+.perfundo__prev{
+  left:0.5em;
+  opacity: .5;
+}
+
+.perfundo__next{
+  right:0.5em;
+  opacity: .5;
+}
+.perfundo a:link, .perfundo a:hover{
+  color:#FFF;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    animation-timing-function:ease-out;
+}
+
+@keyframes fadeIn {
+ from {
+  opacity:0
+ }
+ to {
+  opacity:1
+ }
+}
+
+/* CONCORDANCE */
+ul.concordance{
+  list-style-type: none;
+  column-count: 3;
+  column-gap: 2rem;
+}
+
+ul.concordance > li{
+  break-inside: avoid;
+  page-break-inside: avoid;
+  padding:0.5em;
+  margin:0.3em 0 5.4em -0.5em;
+}
+
+ul.concordance > li h3::before{
+  content: "# ";
+}
+
+ul.concordance > li ul{
+  list-style-type: none;
+}
+
+ul.concordance > li ul li{
+  margin: 1em 0 0 0;
+  font-size: 0.8em;
+}
+
+ul.concordance a{
+  text-decoration: none;
+  color:#000;
+}
+
+ul.concordance a:hover{
+  background-color:#dfdfdf;
+}
+
+ul.concordance li:target {
+  background-color:aquamarine;
+}
+
+ul.concordance li:target a:hover{
+  background-color:#c7ffec;
+}

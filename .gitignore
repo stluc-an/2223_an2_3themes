@@ -1,0 +1,6 @@
+.*
+!.gitignore
+/www
+/http.bat
+.ztr-directory
+*.zou

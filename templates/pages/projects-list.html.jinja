@@ -1,0 +1,25 @@
+{% extends "base.html.jinja" %}
+{% block main_header %}
+<h2>{{page.meta.title}}</h2>
+{% endblock %}
+
+{% block main_content %}
+<p>{{page.text}}</p>
+  <ul class="projects-list">
+  {% for subpath in page['subpages'] %}
+    {% if pages[subpath].meta.visibility != 0 %}
+      <li title="{{pages[subpath].meta.title}}" id="list-{{ pages[subpath].id }}" style="background-image: url('{{subpath}}/folder.jpg'); {{randomDisplace([-4,4],[-5,5],'vw','vh')}}">
+        <a href="{{subpath}}">
+        <div class="project-title" style="font-size:{{ [2.2, 2.5] | random }}vw;{{randomDisplace([-15,15],[-15,6],'%','%')}}">
+          <h3>{{pages[subpath].meta.title}}</h3><span aria-hidden="true">{{pages[subpath].meta.title|randomReSpan}}</span>
+        </div>
+        {% if pages[subpath].meta.teaser %}
+        <p style="{{randomDisplace([-5,11],[-13,13],'%','%','left')}}"><span>&nbsp;&gt; {{pages[subpath].meta.teaser}}&nbsp;</span></p>
+        {% endif %}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+
+{% endblock %}
