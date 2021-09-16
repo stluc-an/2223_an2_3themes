@@ -1,4 +1,5 @@
 {% set page = pages[url] %}
+{% set folder = "/2122_an2_3themes" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +14,8 @@
     <meta name="description" content="{{page.meta.teaser}}">
     {% endif %}
     <meta name="generator" content="Zou!">
-    <link href="/assets/css/perfundo.min.css" rel="stylesheet">
-    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="{{folder}}/assets/css/perfundo.min.css" rel="stylesheet">
+    <link href="{{folder}}/assets/css/main.css" rel="stylesheet">
     {% block head %}
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁</text></svg>">
     {% endblock %}
@@ -53,13 +54,13 @@
                   {% set isActive = true if url == path else false %}
                   {% set isParent = true if url|parent == path else false %}
                     <li id="menu-{{ pages[path].id }}" class="{{'active' if isActive}} {{'parent' if isParent}}">
-                        <a href="{{path}}">{{pages[path].meta.title}}</a>
+                        <a href="{{folder}}{{path}}">{{pages[path].meta.title}}</a>
                         {# if isParent and pages[path]['subpages'] #}
                           <ul>
                           {% for subpath in pages[path]['subpages'] %}
                             {% if pages[subpath].meta.visibility != 0 %}
                             <li id="menu-{{ pages[subpath].id }}" class="{{'active' if url == subpath}}">
-                              <a href="{{subpath}}">{{pages[subpath].meta.title}}</a>
+                              <a href="{{folder}}{{subpath}}">{{pages[subpath].meta.title}}</a>
                             </li>
                             {% endif %}
                           {% endfor %}
