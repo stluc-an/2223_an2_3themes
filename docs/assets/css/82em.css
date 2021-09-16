@@ -1,0 +1,44 @@
+@media (max-width: 82em){
+
+  article, section{
+    margin:0 0 var(--zoumargin) 0;
+  }
+
+  main{
+      display:block;
+      height:auto;
+      order:2;
+      max-width:44rem;
+  }
+
+  main article, main section, main section:first-of-type,
+  main.project-main article, main.project-main section, main.project-main section:first-of-type{
+    width:100%;
+    margin-left:var(--zoumargin);
+  }
+
+  main.project-main section:first-of-type h2{
+    display:block;
+  }
+
+  /* PROJECTS LIST */
+  ul.projects-list li{
+      width:25vw;
+      height:25vw;
+  }
+
+
+
+  /* LOGS */
+  #logs-page section, #logs-page section:first-of-type{
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  #logs-page td:nth-child(even){
+    margin-bottom:2em;
+  }
+
+
+
+}
