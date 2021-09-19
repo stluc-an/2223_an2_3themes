@@ -3,3 +3,7 @@
 /http.bat
 .ztr-directory
 *.zou
+*.bat
+python
+templates/y/*
+assets/css/old/*
