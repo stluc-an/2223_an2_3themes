@@ -1,5 +1,5 @@
 ---
-title: Le dossier
+title: Dossier
 model: default
 ---
 
