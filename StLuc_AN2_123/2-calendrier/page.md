@@ -6,7 +6,7 @@ model: default
 La conception des projets sera divisée en 2 temps : 
 
 ### 1. Chantier de recherches
-Vous collectez des références (artistiques et autres), et brainstormez sur des concepts/idées qui pourraient intervenir dans votre projet.
+Vous collectez des références (artistiques et autres), et brainstormez sur des concepts/idées qui pourraient intervenir dans votre projet. À ce stade, vous ne devez pas encore forcément venir avec un projet élaboré de A à Z ; déterminez avant tout le sujet/propos de votre projet, réalisez des recherches tous azimuts (artistiques, scientifiques, historiques, etc), et proposez des bribes d'idées, de principes, de mécaniques qui constitueront le projet final.
 
 Chaque semaine sera dédiée à un thème. Lors du cours, j'échangerai avec vous sur le résultat de vos recherches.
 - 23/09 : ☁ Le nuage
