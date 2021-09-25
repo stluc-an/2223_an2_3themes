@@ -163,8 +163,15 @@ hr{
 
 
 /* MAIN */
-main p{
+main{
   font-size: 1.2em;
+}
+
+main h2{
+  margin-top: 2em;
+}
+
+main p{
   margin-bottom:1em;
 }
 
@@ -174,6 +181,8 @@ article img{
 
 article ul, section ul{
   list-style-type: ". ";
+  font-family: monospace;
+  margin-bottom:2em;
 }
 
 article li, section li{
