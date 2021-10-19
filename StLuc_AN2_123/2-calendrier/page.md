@@ -29,15 +29,15 @@ Chaque semaine sera dédiée à un thème. Lors du cours, vous aurez un retour s
 
 - 14/10 : ☁ Le nuage
 - 21/10 : 🌱 La plante 
-- 11/11 : ⏳ Le sable
+- **17/11** : ⏳ Le sable
 
 La remise finale de chaque dossier se fera en ligne le lendemain, soit :
 
 - 15/10 : ☁ Le nuage
-- 22/10 : 🌱 La plante 
-- 12/11 : ⏳ Le sable
+- **12/11** : 🌱 La plante 
+- **18/11** : ⏳ Le sable
 
-Le dossier sera rendu sous forme d'un document PDF ou HTML.
+**Le dossier sera rendu sur le Drive, sous forme d'un document PDF ou HTML, nommé simplement de vos deux prénoms (dans l'ordre alphabétique, donc "Antigone&Zébulon.pdf" et non "Zébulon&Antigone.pdf")**
 
 
 ### Pour info
