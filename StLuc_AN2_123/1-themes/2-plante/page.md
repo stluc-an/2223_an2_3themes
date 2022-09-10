@@ -1,5 +1,5 @@
 ---
-title: La plante 🌱
+title: Le numérique bio 🌱
 model: default
 ---
 
