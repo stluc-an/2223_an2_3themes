@@ -1,5 +1,5 @@
 ---
-title: La matérialité du numérique ☁
+title: La matérialité du virtuel ☁
 model: default
 emoji: ☁
 ---
