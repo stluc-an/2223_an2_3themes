@@ -1,5 +1,5 @@
 ---
-title: Le numérique bio 🌱
+title: 🌱 Le numérique bio
 model: default
 ---
 

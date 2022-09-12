@@ -2,7 +2,9 @@
 title: ☁⏳🌱
 model: default
 ---
-Durant 3 cours en cette première moitié de quadrimestre, vous allez imaginer 3 projets, autour de [3 thématiques](./themes). Lors de chacun de ces 3 cours, vous allez brainstormer autour du thème du jour, avec l'objectif de présenter votre concept à l'ensemble de la classe à la fin la journée. C'est une manière d'entraîner votre imagination et votre capacité à répondre à une thématique donnée par un projet artistique. 
+**Durant 3 cours en ce début de quadrimestre, vous allez imaginer 3 projets, autour de [3 thématiques](./themes). **
+
+Lors de chacun de ces 3 cours, vous allez brainstormer autour du thème du jour, avec l'objectif de présenter votre concept à l'ensemble de la classe à la fin la journée. C'est une manière d'entraîner votre imagination et votre capacité à répondre à une thématique donnée par un projet artistique. 
 
 Le travail se fera par groupes de deux. Il s'agira bien sûr de stimuler mutuellement votre imagination, et non de vous reposer sur les efforts de votre collègue.
 

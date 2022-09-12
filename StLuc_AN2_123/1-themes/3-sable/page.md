@@ -1,5 +1,5 @@
 ---
-title: La permanence programmée ⏳
+title: ⏳ La permanence programmée 
 model: default
 ---
 
