@@ -12,7 +12,7 @@
                   {% for subpath in pages[path]['subpages'] %}
                     {% if pages[subpath].meta.visibility != 0 %}
                     <li id="menu-{{ pages[subpath].id }}" class="{{'active' if url == subpath}}">
-                      <a href="{{folder}}{{subpath}}">{{pages[subpath].meta.title}}</a>
+                      <a href="{{folder}}{{subpath}}">{{pages[subpath].meta.emoji}}</a>
                     </li>
                     {% endif %}
                   {% endfor %}

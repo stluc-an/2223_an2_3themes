@@ -1,9 +1,10 @@
 ---
 title: 🌱 Le numérique bio
 model: default
+emoji: 🌱
 ---
 
-**Dans le cadre de cette recherche, vous allez explorer, questionner, repenser un aspect du numérique en lien, en parallèle avec, ou en s'inspirant du monde végétal/fongique.**
+**Dans le cadre de cette recherche, vous allez explorer, questionner, repenser un aspect du numérique en lien / en parallèle / en s'inspirant du monde végétal/fongique.**
 
 On oppose souvent technologie et nature. On peut néanmoins créer de nombreux parallèles enrichissants en comparant le numérique avec le monde végétal et fongique (les champignons).
 
@@ -28,6 +29,6 @@ Le projet spéculatif [terra0](https://www.terra0.org/) vise à créer des écos
 [^5]: ![Wood Wide Web](www.jpg)
 [^6]: ![Martin Howse](martinhowse_web.jpg)
 [^7]: ![Biomodd d'Angelo Vermeulen](Biomodd-ATH1_web.jpg)
-[^8]: ![](potager_web.jpg)
+[^8]: ![Jardin collectif](potager_web.jpg "Jardin collectif")
 [^9]: ![terra0](terra0_web.jpg)
 [^10]: ![](marieke_soilclock.jpg)

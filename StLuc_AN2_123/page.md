@@ -1,5 +1,5 @@
 ---
-title: ☁⏳🌱
+title: ⛅⏳🌱
 model: default
 ---
 **Durant 3 cours en ce début de quadrimestre, vous allez imaginer 3 projets, autour de [3 thématiques](./themes). **

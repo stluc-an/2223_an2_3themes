@@ -1,7 +1,7 @@
 ---
-title: ☁ La matérialité du virtuel 
+title: ⛅ La matérialité du virtuel 
 model: default
-emoji: ☁
+emoji: ⛅
 ---
 
 Le numérique est souvent perçu à tort comme un médium immatériel. 
@@ -21,8 +21,8 @@ Avec [Get Popular Vending Machine de Dries Deporter](https://driesdepoorter.be/v
 [Alerting Infrastructure de Jonah Brucker-Cohen](https://www.coin-operated.com/2010/05/09/alerting-infrastructure-2003/) provoque la destruction physique d'un mur, à chaque visite du site de l'institution où l’œuvre est exposée.
 
 [^2]: ![Elon Musk - Starlink](starlink.jpg)
-[^3]: ![](tabi.webp)
+[^3]: ![TABITA REZAIRE – DEEP DOWN TIDAL](tabi.webp)
 [^4]: ![Aram Barthol - Map](aram.jpg)
-[^5]: ![](leegte.jpg)
-[^6]: ![](dries.jpg)
-[^1]: ![](cloud.jpg)
+[^5]: ![Jan Robert Leegte - In Memory of New Materials Gone](leegte.jpg)
+[^6]: ![Dires Depoorter - Get Popular Vending Machine](dries.jpg)
+[^1]: ![The cloud](cloud.jpg "The cloud")

@@ -1,25 +1,25 @@
 ---
-title: Calendrier Q1
+title: Calendrier
 model: default
 ---
 
 Chaque cours sera dédiée à un thème. Vous présentez à la fin du cours le résultat de vos réflexions.
 
-- 23/09 : ☁ Matérialité du numérique
+- 23/09 : ⛅ Matérialité du numérique
 - 07/10 : 🌱 La plante
 - 21/10 : ⏳ Le sable
 
-## Autres activités du Q1
-### Boîte à outils
+### Autres activités du Q1
+#### Boîte à outils
 Pendant deux cours, nous explorerons ensemble divers outils logiciels qui pourrons servir dans vos projets futurs. Il s'agira de brèves introductions qui visent surtout à vous donner une idée de la palette des possibles, pour vos projets futurs.
 
 - 30/09 : Processing, Python (à confirmer)
 - 14/10 : Pure Data, OSC, Spout/Syphon (à confirmer)
 
-### Atelier transversal
+#### Atelier transversal
 La semaine du 24/10, vous participerez à un atelier transversal en compagnie de collègues d'autres cursus.
 
-### Projet de fin de quadrimestre
+#### Projet de fin de quadrimestre
 À partir de la semaine du 07/11, vous travaillerez sur un projet comment au cours de Vincent et au mien, avec présentation lors de la cotation du premier quadrimstre.
 
 Calendrier prévisionnel :
