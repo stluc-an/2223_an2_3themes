@@ -5,9 +5,9 @@ model: default
 
 Chaque cours sera dédiée à un thème. Vous présentez à la fin du cours le résultat de vos réflexions.
 
-- 23/09 : ⛅ Matérialité du numérique
-- 07/10 : 🌱 La plante
-- 21/10 : ⏳ Le sable
+- 23/09 : ⛅ [La matérialité du virtuel](nuage)
+- 07/10 : 🌱 [Le numérique bio](plante)
+- 21/10 : ⏳ [La permanence programmée](sable)
 
 ### Autres activités du Q1
 #### Boîte à outils
